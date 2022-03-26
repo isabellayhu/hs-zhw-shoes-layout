@@ -119,6 +119,7 @@ iframe {
   color: white;
   text-shadow: 0 2px 3px #000;
   margin: 0 0 10px;
+  grid-column: 1/4;
 }
 
 .border_right {
@@ -257,6 +258,7 @@ a.gplus:active { background-position: -80px -80px; }
 section {
   padding: 20px;
   background: white;
+  display: block;
 }
 
 section a {
@@ -303,3 +305,21 @@ footer a {
 }
 
 /* code examples copyright Jonathan Grover 2012 */
+
+#wood .wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+#sale {
+  grid-column: 1/4;
+}
+
+#grass {
+  grid-column: 1/3;
+}
+
+#details .wrapper{
+  column-count: 3;
+}
